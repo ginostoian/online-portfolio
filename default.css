@@ -16,6 +16,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -301,6 +302,49 @@ h6 { font-size: 16px; }
 .social-img {
     width: 100%;
 }
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.project {
+    border: 1px solid var(--border-color);
+    box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, .75);
+}
+
+.projects-heading {
+    text-align: center;
+}
+
+
+.project-thumbnail {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-preview {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.project-title {
+    color: #000;
+    margin: 0;
+}
+
+.project-intro {
+    color: #4b5156;
+    font-size: 14px;
+}
+
+
+
 
 
 
