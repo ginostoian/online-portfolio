@@ -16,6 +16,8 @@
 
 
     <link rel="stylesheet" href="default.css">
+
+    <link id="theme-style" rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +36,8 @@
                     </div>
 
                     <ul id="navigation" class="nav-contact-wrapper">
-                        <li><a href="#"> Contact</a></li>
-                        <li><a href="#"> Portfolio</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                        <li><a href="#portfolio"> Portfolio</a></li>
                         <li><a href="#about"> About</a></li>
                     </ul>
                 </div>
@@ -45,16 +47,16 @@
                     <h5 class="theme-title">Personalize theme</h5>
 
                     <div class="theme-options-wrapper">
-                        <div id="light-theme" class="theme-dot">
+                        <div data-mode="light" id="light-theme" class="theme-dot">
 
                         </div>
-                        <div id="blue-theme" class="theme-dot">
+                        <div data-mode="blue" id="blue-theme" class="theme-dot">
 
                         </div>
-                        <div id="green-theme" class="theme-dot">
+                        <div data-mode="green" id="green-theme" class="theme-dot">
 
                         </div>
-                        <div id="purple-theme" class="theme-dot">
+                        <div data-mode="purple" id="purple-theme" class="theme-dot">
 
                         </div>
 
@@ -142,7 +144,7 @@
         </div>
     </section>
 
-    <section class="section-type-1">
+    <section id="portfolio" class="section-type-1">
         <div class="main-container">
             <h3 class="projects-heading">A look into past projects</h3>
             <div class="projects-wrapper">
@@ -168,7 +170,7 @@
                             <p class="project-intro">Online store with Stripe payments integration and guest user
                                 shopping
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +183,7 @@
                             <p class="project-intro">Modulized guide for online courses with step by step instructions
                                 hosted
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -190,7 +192,7 @@
         </div>
     </section>
 
-    <section class="section-type-2">
+    <section id="contact" class="section-type-2">
         <div class="main-container">
             <h3 class="projects-heading">Drop me a line</h3>
 
@@ -212,6 +214,10 @@
             </form>
         </div>
     </section>
+
+    <script src="app.js">
+
+    </script>
 </body>
 
 </html>
